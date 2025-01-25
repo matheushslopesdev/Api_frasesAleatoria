@@ -19,7 +19,7 @@ app.get('/fraseAleatoria',(req,res)=>{
 
 // função de fetch API
 async function apiFrases() {
-    const fraseAleatoria = await fetch('http://localhost:3300/fraseAleatoria')
+    const fraseAleatoria = await fetch('https://api-frasesaleatoria.onrender.com/fraseAleatoria')
     const dados = await fraseAleatoria.json()
     return await dados
 }
